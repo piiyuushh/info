@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Karn</title>
+    <link rel="icon" href="/images/title-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+
+        <ul class = "sidebar">
+
+            <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <li onclick="scrollToHome()">Home</li>
+            <li onclick="scrollToAbout()">About</li>
+            <li onclick="scrollToProjects()">Projects</li>
+            <li onclick="scrollToContact()">Contact</li>
+            
+        </ul>
+
+        <ul>
+            <li><a href="index.html"><img src="./images/Personal.png" alt=""></a></li>
+            <li class="hideOnMobile" onclick="scrollToHome()">Home</li>
+            <li class="hideOnMobile" id="about" onclick="scrollToAbout()">About</li>
+            <li class="hideOnMobile" onclick="scrollToProjects()">Projects</li>
+            <li class="hideOnMobile" onclick="scrollToContact()">Contact</li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+        <div class="headerContainer">
+            <div class="headerContent">
+                <h1>Hi, I'm Piyush Karn</h1>
+                <p>Fulltime student and a part time web developer</p>
+                <button class="discoverMe" onclick="scrollToAbout()">Discover me</button>
+                
+            </div>
+        </div>
+
+
+
+        <div class="aboutContent">
+            <div class="aboutHeader">
+            <h1>About Me</h1>
+            <p class="aboutP">I am Piyush Karn. I am 19 years old. I am a full time student a part time web developer. Currently working on backend programming from java and python. And yup I am also a madridista. Hala Madrid! Apart from living a boring lifestyle, I love to play sports. Currently as I am on my way to become a full stack developer, I have made some compromises hoping that those compromises will help me live my dream life. I am not looking for a job currently but as times change, a human changes its mindset. And I am also experiencing a gutt feeling to join this race. Maybe you'll see me somewhere else in my upcoming future.
+            </p>
+    
+        </div>
+        </div>
+        
+        <div class="progressBar">
+            <img src="./images/progress bar.png">
+        </div>
+
+        <div class="aboutContent">
+            <p class="aboutP">Apart from all these boring work, I also have some so called "extra ordinary skills".</p>
+        </div>
+        
+        <div class="progressBar">
+            <img src="./images/wawawawa.png">
+        </div>
+        <div class="projects">
+            <h1 class="projectsHeader">All of my projects can be seen here</h1>
+            <p>I have worked on some projects. They will be published soon on my account.</p>
+            <button class="contactButton"><a href="https://github.com/piiyuushh">Click here</a></button>
+        </div>
+        
+        <div class="contactDiv">
+            <h1>Contact Me</h1><br>
+            <p class="aboutP">I know there's no reason for you to reach out to me, but still if you think I am eligible to solve some of your queries you can click the button below and provide your information. I'll make sure I reply to your message.</p>
+            <button class="contactButton"><a href="./html/contact.html" target="_blank" style="color: white;">Click here</a></button>
+        </div>
+        
+        <footer class="footerContent">
+            <div class="created">
+                <h3>Created by Piyush Karn</h3>
+                <p>&copy;Copyright Piyush Karn</p>
+                <p>NOTE: no external libraries are used to create this website.</p>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Enter your email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+
+            <div class="follow">
+                <h3>Follow me on</h3>
+                <a href="https://www.instagram.com/piyushkarn87/" target="_blank"><img src="./images/instagram.jpg" alt=""></a>
+                <a href="https://github.com/piiyuushh"><img src="./images/github.png" alt=""></a>
+            </div>
+        </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
