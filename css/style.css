@@ -44,11 +44,12 @@ nav li:first-child{
     top: 0;
     right: 0;
     height: 100vh;
+    color: black;
     width: 250px;
     z-index: 999;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(217, 214, 214);
     box-shadow: -10px 0 5px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(35px);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -56,10 +57,11 @@ nav li:first-child{
 }
 .sidebar li{
     width: 100%;
+    color: black;
 }
 .sidebar a{
     width: 100%;
-    color: white;
+    color: black;
 }
 .sidebar a:hover{
     color: purple;
@@ -110,10 +112,20 @@ nav li:first-child{
 .aboutContent{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
 
+}
+@media (max-width:800px) {
+    .aboutContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
 .aboutHeader{
     justify-content: center;
@@ -440,4 +452,28 @@ nav li:first-child{
 }
 .projectDisplay:hover{
     box-shadow: 40px 10px 30px rgba(5, 167, 236, 0.1);
+}
+.projectDisplay button{
+    background-color: rgb(48, 73, 73);
+    backdrop-filter: blur(35px);
+    color: white;
+}
+@media (max-width: 800px){
+    .projectDisplay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 80vw;
+        background-color: rgb(227, 156, 222);
+        color: white;
+        border: 2px solid gray;
+        border-radius: 5px;
+        margin-left: 70px;
+        margin-right: auto;
+    }
+    .projectDisplay:hover{
+        box-shadow: 5px 10px 5px rgb(238, 8, 211);
+    }
 }
