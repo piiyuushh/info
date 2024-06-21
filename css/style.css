@@ -34,6 +34,7 @@ nav li{
 }
 nav li:hover{
     color:rgb(206, 145, 220);
+    cursor: pointer;
 }
 
 nav li:first-child{
@@ -65,6 +66,7 @@ nav li:first-child{
 }
 .sidebar a:hover{
     color: purple;
+    cursor: pointer;
 }
 .menuButton{
     display: none;
