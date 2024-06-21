@@ -59,16 +59,23 @@ function validateForm(){
 function changeMode() {
    var body = document.body;
    var nav = document.querySelector('nav');
+   var li = document.querySelector('.listItems');
    var footer = document.querySelector('footer');
    var sunIcon = document.querySelector('.sun'); 
    var moonIcon = document.querySelector('.moon'); 
 
    if (body.classList.contains('light-mode')) {
        // Switch to dark mode
-       [body, nav, footer].forEach(el => {
+       [body, nav, li].forEach(el => {
            el.classList.remove('light-mode');
            el.classList.add('dark-mode');
-           el.style.backgroundColor = 'gray';
+           el.style.backgroundColor = 'darkslategray';
+           el.style.color = 'white';
+       });
+       [footer].forEach(el => {
+           el.classList.remove('light-mode');
+           el.classList.add('dark-mode');
+           el.style.backgroundColor = 'black';
            el.style.color = 'white';
        });
        sunIcon.style.display = 'none';

@@ -87,13 +87,43 @@ nav li:first-child{
 }
 
 .headerContainer{
-    height: 100vh;
+    height: 900px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
+    justify-content: space-between;
+    background-image: url(/info/images/piyush.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+.headerContent{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 500px;
 
+}
+.headerContent button{
+    width: 200px;
+}
+@media (max-width:800px) {
+    .headerContent {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding-left: 30px;
+    }
+    }
+
+.piyushImg{
+    height: 400px;
+    width: 300px;
+    padding-left: 900px;
+    border-radius: 5px;
+}
 
 .discoverMe{
     font-size: 20px;
@@ -110,7 +140,7 @@ nav li:first-child{
     color: white;
 }
 .aboutContent{
-    height: 100vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,7 +181,7 @@ nav li:first-child{
 }
 
 .aboutContent2{
-    height: 100vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,6 +244,7 @@ nav li:first-child{
     }
     .projects {
         display: flex;
+        height: 300px;
         align-items: center;
         justify-content: center;
         height: 100vh;
@@ -252,11 +283,11 @@ nav li:first-child{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 300px;
 }
 .contactDiv h1{
     text-align: center;
-    height: 50vh;
+    height: 100px;
 }
 
 .contactDiv table{
