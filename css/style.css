@@ -118,25 +118,53 @@ nav li:first-child{
     padding: 10px 20px;
 
 }
+.aboutContent h1{
+    text-align: center;
+}
 @media (max-width:800px) {
     .aboutContent{
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         
+    }
+
+    .aboutContent h1{
+        display: flex;
+        flex-direction: column;
+        padding: auto;
+    }
+    .aboutContent p{
+        font-size:20px;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        width: 300px;
+    
     }
 }
 .aboutHeader{
     justify-content: center;
     align-items: center;
-    /* padding: 10px 20px; */
+    padding-left: 20px;
 }
-.aboutP{
+
+.aboutContent2{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutContent2 p{
     font-size:20px;
     width: 500px;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+    width: 300px;
 }
 
 .progressBar{
@@ -156,7 +184,7 @@ nav li:first-child{
     }
     
 }
-@media (max-width: 300px){
+@media (max-width: 800px){
     .progressBar{
         display: flex;
         flex-direction: column;
@@ -171,6 +199,7 @@ nav li:first-child{
         font-size:20px;
         width: 500px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -180,6 +209,8 @@ nav li:first-child{
         align-items: center;
         padding: 10px 20px;
         display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
     }
     .projects {
         display: flex;
@@ -187,6 +218,22 @@ nav li:first-child{
         justify-content: center;
         height: 100vh;
         
+    }
+    .projects h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        width: 300px;
+    }
+    .projects p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        width: 300px;
     }
 }
 
@@ -242,6 +289,10 @@ nav li:first-child{
         display: flex;
         height: 100%;
         align-items: center;
+    }
+    .contactDiv p{
+        padding-left: 20px;
+        width: 300px;
     }
     .contactDiv h1{
         text-align: center;
@@ -430,6 +481,7 @@ nav li:first-child{
     flex-direction: column;
 
 }
+
 .projects a{
     color: white;
     text-decoration: none;
@@ -465,15 +517,58 @@ nav li:first-child{
         justify-content: center;
         align-items: center;
         height: 400px;
-        width: 80vw;
+        width: 300px;
         background-color: rgb(227, 156, 222);
         color: white;
         border: 2px solid gray;
-        border-radius: 5px;
-        margin-left: 70px;
-        margin-right: auto;
+        border-radius: 10px;
+        padding-left: 5px;
+        
     }
     .projectDisplay:hover{
         box-shadow: 5px 10px 5px rgb(238, 8, 211);
     }
+}
+
+@media (max-width:800px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
+
+#moon{
+    width: 50px;
+    cursor: pointer;
+    height: 30px;
+
+}
+#sun{
+    width: 50px;
+    cursor: pointer;
+    height: 30px;
+    display: none;
+}
+
+.modeButton{
+    border: none;
+    background-color: transparent;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
 }

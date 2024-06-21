@@ -55,3 +55,33 @@ function validateForm(){
       alert("Thank you for your reaching out to us!");
    }
 }
+
+function changeMode() {
+   var body = document.body;
+   var nav = document.querySelector('nav');
+   var footer = document.querySelector('footer');
+   var sunIcon = document.querySelector('.sun'); 
+   var moonIcon = document.querySelector('.moon'); 
+
+   if (body.classList.contains('light-mode')) {
+       // Switch to dark mode
+       [body, nav, footer].forEach(el => {
+           el.classList.remove('light-mode');
+           el.classList.add('dark-mode');
+           el.style.backgroundColor = 'gray';
+           el.style.color = 'white';
+       });
+       sunIcon.style.display = 'none';
+       moonIcon.style.display = 'block';
+   } else {
+       // Switch to light mode
+       [body, nav, footer].forEach(el => {
+           el.classList.remove('dark-mode');
+           el.classList.add('light-mode');
+           el.style.backgroundColor = ''; // reset to default
+           el.style.color = ''; // reset to default
+       });
+       sunIcon.style.display = 'block';
+       moonIcon.style.display = 'none';
+   }
+}
