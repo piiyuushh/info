@@ -48,7 +48,7 @@ nav li:first-child{
     color: black;
     width: 250px;
     z-index: 999;
-    background-color: rgb(217, 214, 214);
+    background-color: rgba(217, 214, 214, 0.148);
     box-shadow: -10px 0 5px rgba(0,0,0,0.1);
     backdrop-filter: blur(35px);
     display: none;
