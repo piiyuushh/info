@@ -42,6 +42,15 @@ function scrollToProjects(){
    element.scrollIntoView({behavior: "smooth"});
 
 }
+function scrollToProjectsHeader(){
+   const element = document.querySelector(".projectsHeader");
+   element.scrollIntoView({behavior: "smooth"});
+}
+function scrollToProjecDisplay(){
+   const element = document.querySelector(".projectDisplay");
+   element.scrollIntoView({behavior: "smooth"});
+
+}
 
 function validateForm(){
    const name = document.forms["contactForm"]["name"].value;
@@ -66,13 +75,19 @@ function changeMode() {
 
    if (body.classList.contains('light-mode')) {
        // Switch to dark mode
-       [body, nav, li].forEach(el => {
+       [body, li].forEach(el => {
            el.classList.remove('light-mode');
            el.classList.add('dark-mode');
            el.style.backgroundColor = 'darkslategray';
            el.style.color = 'white';
        });
        [footer].forEach(el => {
+           el.classList.remove('light-mode');
+           el.classList.add('dark-mode');
+           el.style.backgroundColor = 'black';
+           el.style.color = 'white';
+       });
+       [nav].forEach(el => {
            el.classList.remove('light-mode');
            el.classList.add('dark-mode');
            el.style.backgroundColor = 'black';
