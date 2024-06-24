@@ -35,8 +35,18 @@ function scrollToAbout(){
 
 function scrollToContact(){
    const element = document.querySelector(".contactDiv");
-   element.scrollIntoView({behavior: "smooth"});
+   if(element){
+      element.scrollIntoView({behavior: "smooth"});
+   }
+   else{
+      console.log("Element not found");
+   }
+   
 }
+// function scrolltoContact(){
+//    var element = document.getElementById("#contactH1");
+//    element.scrollIntoView({behavior:"smooth"});
+// }
 function scrollToProjects(){
    const element = document.querySelector(".projectsHeader");
    element.scrollIntoView({behavior: "smooth"});
@@ -71,28 +81,17 @@ function changeMode() {
    var li = document.querySelector('.listItems');
    var footer = document.querySelector('footer');
    var sunIcon = document.querySelector('.sun'); 
-   var moonIcon = document.querySelector('.moon'); 
+   var moonIcon = document.querySelector('.moon');
 
    if (body.classList.contains('light-mode')) {
        // Switch to dark mode
        [body, li].forEach(el => {
            el.classList.remove('light-mode');
            el.classList.add('dark-mode');
-           el.style.backgroundColor = 'darkslategray';
+           el.style.backgroundColor = 'rgb(17, 18, 61)';
            el.style.color = 'white';
        });
-       [footer].forEach(el => {
-           el.classList.remove('light-mode');
-           el.classList.add('dark-mode');
-           el.style.backgroundColor = 'black';
-           el.style.color = 'white';
-       });
-       [nav].forEach(el => {
-           el.classList.remove('light-mode');
-           el.classList.add('dark-mode');
-           el.style.backgroundColor = 'black';
-           el.style.color = 'white';
-       });
+
        sunIcon.style.display = 'none';
        moonIcon.style.display = 'block';
    } else {
