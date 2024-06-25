@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    background-color: rgb(17, 18, 61);
 }
 nav{
     height: 50px;
@@ -47,9 +48,25 @@ nav li{
     padding: 10px 20px;
     justify-content: space-between;
     background-image: url(/info/images/piyush.JPG);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+@media (max-width:800px) {
+    .headerContainer {
+        height: 900px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: space-between;
+        background-image: url(/info/images/piyush.JPG);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
 }
 .headerContent{
     display: flex;
@@ -58,6 +75,9 @@ nav li{
     padding-left: 500px;
 
 }
+.headerContent h1{
+    color: rgb(17, 18, 61);
+}
 .headerContent button{
     width: 200px;
 }
@@ -65,11 +85,10 @@ nav li{
     .headerContent {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 500px;
         padding-left: 30px;
-        
     }
-    }
+}
 
 .piyushImg{
     height: 400px;
@@ -86,7 +105,8 @@ nav li{
     background-color: rgb(206, 145, 220);
     border-radius: 5px;
     border: none;
-    padding: 10px 20px;
+    padding:10px 25px;
+    margin-left: 30px;
 }
 .discoverMe:hover{
     background-color: black;
@@ -94,13 +114,13 @@ nav li{
 }
 .aboutContent{
     height: 500px;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    
+    background-color: rgba(153, 205, 50, 0.375);
+    backdrop-filter: blur(35px);
 
 }
 .aboutContent h1{
@@ -108,9 +128,10 @@ nav li{
 }
 @media (max-width:800px) {
     .aboutContent{
-        height: 100vh;
+        height: 900px;
         display: flex;
         flex-direction: column;
+        width: 500px;
         
     }
 
@@ -141,6 +162,8 @@ nav li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(153, 205, 50, 0.375);
+    backdrop-filter: blur(35px);
 
 }
 .aboutContent2 p{
@@ -150,6 +173,19 @@ nav li{
     justify-content: center;
     padding-left: 20px;
     width: 300px;
+}
+@media (max-width: 800px) {
+    .aboutContent2{
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        
+    }
+}
+#aboutHeader{
+    background-color: rgba(153, 205, 50, 0.375);
+    backdrop-filter: blur(35px);
 }
 
 .progressBar{
@@ -168,6 +204,10 @@ nav li{
 
     }
     
+}
+.projects{
+    background-color: rgba(255, 140, 0, 0.391);
+    backdrop-filter: blur(35px);
 }
 @media (max-width: 800px){
     .progressBar{
@@ -202,7 +242,7 @@ nav li{
         height: 300px;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        width: 500px;
         
     }
     .projects h1{
@@ -221,6 +261,13 @@ nav li{
         padding-left: 10px;
         width: 300px;
     }
+    .displayDiv{
+        display: flex;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+    }
 }
 .aboutP{
     font-size:20px;
@@ -238,7 +285,9 @@ nav li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 500px;
+    background-color: salmon;
+    backdrop-filter: blur(35px);
 }
 .contactDiv h1{
     text-align: center;
@@ -249,13 +298,6 @@ nav li{
     width: 100%;
     text-align: center;
     padding: 10px 20px;
-
-}
-.contactDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 
 }
 .contactDiv button{
@@ -283,8 +325,9 @@ nav li{
 @media (max-width: 800px){
     .contactDiv{
         display: flex;
-        height: 100%;
+        height: 900px;
         align-items: center;
+        width: 500px;
     }
     .contactDiv p{
         padding-left: 20px;
@@ -329,7 +372,7 @@ nav li{
 
 .footerContent{
     height: 40vh;
-    background-color: darkslateblue;
+    background-color: rgba(60, 59, 59, 0.998);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -339,6 +382,7 @@ nav li{
     padding-top: 50px;
     padding-left: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: left;
     height: 200px;
     width: 500px;
@@ -579,18 +623,32 @@ nav li{
     background-color: white;
     color: black;
 }
-
-#navId:hover{
-    background-color: rgba(85, 74, 212, 0.379);
-    color: white;
-}
 #navigationBar{
     border: none;
     border-radius: 5px;
+    background-color: rgba(60, 59, 59, 0.998);
+    height: 90px;
 }
 #headH1{
     font-weight: 700;
+    padding-left: 30px;
+}
+#headP{
+    padding-left: 30px;
+    font-weight: bold;
 }
 a{
     cursor: pointer;
+}
+#navigationBar{
+    background-color: rgba(60, 59, 59, 0.998);
+    height: 100px;
+}
+#navigationBar a{
+    color: rgb(174, 222, 17);
+    font-weight: 500;
+
+}
+#navigationBar a:hover{
+    color: black;
 }

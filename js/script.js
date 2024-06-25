@@ -18,7 +18,7 @@ function buttonHover(){
 }
 
 function scrollToHome(){
-   const element = document.querySelector(".headerContent");
+   const element = document.querySelector(".headerContainer");
    element.scrollIntoView({behavior: "smooth"});
 
 }
@@ -29,7 +29,7 @@ function scrollToProjects(){
 }
 
 function scrollToAbout(){
-   const element = document.querySelector(".aboutHeader");
+   const element = document.querySelector(".aboutContent");
    element.scrollIntoView({behavior: "smooth"});
 }
 
@@ -72,37 +72,5 @@ function validateForm(){
    }
    else{
       alert("Thank you for your reaching out to us!");
-   }
-}
-
-function changeMode() {
-   var body = document.body;
-   var nav = document.querySelector('nav');
-   var li = document.querySelector('.listItems');
-   var footer = document.querySelector('footer');
-   var sunIcon = document.querySelector('.sun'); 
-   var moonIcon = document.querySelector('.moon');
-
-   if (body.classList.contains('light-mode')) {
-       // Switch to dark mode
-       [body, li].forEach(el => {
-           el.classList.remove('light-mode');
-           el.classList.add('dark-mode');
-           el.style.backgroundColor = 'rgb(17, 18, 61)';
-           el.style.color = 'white';
-       });
-
-       sunIcon.style.display = 'none';
-       moonIcon.style.display = 'block';
-   } else {
-       // Switch to light mode
-       [body, nav, footer].forEach(el => {
-           el.classList.remove('dark-mode');
-           el.classList.add('light-mode');
-           el.style.backgroundColor = ''; // reset to default
-           el.style.color = ''; // reset to default
-       });
-       sunIcon.style.display = 'block';
-       moonIcon.style.display = 'none';
    }
 }
