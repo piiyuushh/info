@@ -53,7 +53,7 @@ function scrollToProjects(){
 
 }
 function scrollToProjectsHeader(){
-   const element = document.querySelector(".projectsHeader");
+   const element = document.querySelector(".projects");
    element.scrollIntoView({behavior: "smooth"});
 }
 function scrollToProjecDisplay(){
