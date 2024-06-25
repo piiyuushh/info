@@ -16,7 +16,7 @@
         <div class="container-fluid">
           <a class="navbar-brand"><img src="/info/images/Personal.png" alt="" style="height: 37px;"></a>
           
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="padding-bottom: 10px;">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -28,13 +28,13 @@
             <div class="offcanvas-body">
               
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
+                <li class="nav-item" id="navId">
                   <a class="nav-link active" aria-current="page" onclick="scrollToHome()">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="navId">
                   <a class="nav-link"  onclick="scrollToAbout()">About</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="navId">
                   <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Projects
                   </a>
@@ -45,7 +45,7 @@
                       <hr class="dropdown-divider">
                     </li>
                   </ul>
-                  <li class="nav-item">
+                  <li class="nav-item" id="navId">
                     <a class="nav-link"  onclick="scrollToContact()">Contact</a>
                   </li>
                 </li>
@@ -58,8 +58,8 @@
         <div class="headerContainer">
             <div class="headerContent">
 
-                <h1>Hi, I'm Piyush Karn</h1>
-                <p>Fulltime student and a part time web developer</p>
+                <h1 id="headH1">Hi, I'm Piyush Karn</h1>
+                <p id="headP">Fulltime student and a part time web developer</p>
                 <button class="discoverMe" onclick="scrollToAbout()">Discover me</button>
                 
             </div>
