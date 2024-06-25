@@ -661,3 +661,10 @@ a{
 #navigationBar a:hover{
     color: black;
 }
+
+#headerButton{
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    
+}
