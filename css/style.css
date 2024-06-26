@@ -47,7 +47,7 @@ nav li{
 
 
 .headerContainer{
-    height: 900px;
+    height: 150vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -85,7 +85,7 @@ nav li{
     height: 200px;
     justify-content: center;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 10px;
 }
 .headerContent h1{
@@ -649,7 +649,7 @@ nav li{
     border: none;
     border-radius: 5px;
     background-color: rgba(60, 59, 59, 0.998);
-    height: 90px;
+    height: 70px;
 }
 #headH1{
     font-weight: 700;
