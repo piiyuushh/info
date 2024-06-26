@@ -17,7 +17,7 @@ body{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: rgb(17, 18, 61);
+    background-color:transparent;
 }
 nav{
     height: 50px;
