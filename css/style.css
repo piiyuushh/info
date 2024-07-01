@@ -3,7 +3,7 @@
     padding: 0;
     font-family:Poppins, sans-serif;
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     body{
         width: 100%;
     
@@ -59,7 +59,7 @@ nav li{
     background-repeat: no-repeat;
     background-position: center;
 }
-@media (max-width:800px) {
+@media (max-width:900px) {
     .headerContainer {
         height: 900px;
         width: 500px;
@@ -94,7 +94,7 @@ nav li{
 .headerContent button{
     width: 200px;
 }
-@media (max-width:800px) {
+@media (max-width:900px) {
     .headerContent {
         display: flex;
         flex-direction: column;
@@ -126,7 +126,7 @@ nav li{
     color: white;
 }
 .aboutContent{
-    height: 500px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,9 +139,9 @@ nav li{
 .aboutContent h1{
     text-align: center;
 }
-@media (max-width:800px) {
+@media (max-width:900px) {
     .aboutContent{
-        height: 900px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         width: 500px;
@@ -187,7 +187,7 @@ nav li{
     padding-left: 20px;
     width: 300px;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .aboutContent2{
         height: 900px;
         display: flex;
@@ -209,7 +209,7 @@ nav li{
     padding-bottom: 10px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .progressBar{
         display: flex;
         flex-direction: column;
@@ -222,7 +222,7 @@ nav li{
     background-color: rgba(255, 140, 0, 0.391);
     backdrop-filter: blur(35px);
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     .progressBar{
         display: flex;
         flex-direction: column;
@@ -306,6 +306,9 @@ nav li{
     text-align: center;
     height: 100px;
 }
+.contactDiv a {
+    text-decoration: none;
+}
 
 .contactDiv table{
     width: 100%;
@@ -335,7 +338,7 @@ nav li{
     color: white;
 
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     .contactDiv{
         display: flex;
         height: 900px;
@@ -432,7 +435,7 @@ nav li{
 .footerContent h3{
     color: white;
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     .footerContent{
         display: flex;
         flex-direction: column;
@@ -528,7 +531,7 @@ nav li{
     background-color: rgb(86, 203, 80);
     color: white;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .contactContainer{
         width: 100%;
         height: 100vh;
@@ -583,7 +586,7 @@ nav li{
 .projectDisplay a{
     text-decoration: none;
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     .projectDisplay{
         display: flex;
         flex-direction: column;
@@ -647,9 +650,8 @@ nav li{
 }
 #navigationBar{
     border: none;
-    border-radius: 5px;
-    background-color: rgba(60, 59, 59, 0.998);
-    height: 70px;
+    height: 80px;
+    border-radius: none;
 }
 #headH1{
     font-weight: 700;
@@ -663,16 +665,17 @@ a{
     cursor: pointer;
 }
 #navigationBar{
-    background-color: rgba(60, 59, 59, 0.998);
-    height: 100px;
+    background-color: #22283fc6;
 }
 #navigationBar a{
-    color: rgb(174, 222, 17);
+    color: rgb(104, 240, 45);
     font-weight: 500;
+    text-decoration: outline;
+    outline:black;
 
 }
 #navigationBar a:hover{
-    color: black;
+    color:white;
 }
 
 #headerButton{
@@ -685,6 +688,7 @@ a{
 /* .headerContainer{
     width: 420px;
 } */
+
 /* creating type writing animation */
 #headH1{
     border-right: 5px solid;
@@ -714,4 +718,11 @@ a{
     from {
         width: 0;
     }
+}
+#offcanvasNavbar{
+    background-color: #22283fa2;
+    backdrop-filter: blur(5px);
+}
+.navbar-toggler-icon{
+    outline: 2 px solid white;
 }
